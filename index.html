@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAC Niterói | Grupo 3 - Tropicalismo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <header class="topo">
+    <a href="#inicio" class="logo">G3 <span>Tropicália</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#clipe">Clipe</a>
+      <a href="#museu">O Museu</a>
+      <a href="#localizacao">Onde fica</a>
+      <a href="#ficha">Ficha técnica</a>
+      <a href="#grupo">Grupo</a>
+    </nav>
+  </header>
+
+  <!-- INÍCIO -->
+  <section class="hero" id="inicio">
+    <div class="hero-texto">
+      <p class="tag">Trabalho de Tropicalismo · Grupo 3</p>
+      <h1>
+        <span class="c1">É</span>
+        <span class="mais">+</span>
+        <span class="c2">MAC</span>
+        <span class="c3">Niterói</span>
+      </h1>
+      <p class="sub">
+        A música <strong>“É”</strong> e o <strong>Museu de Arte Contemporânea de Niterói</strong>,
+        o “disco voador” de Oscar Niemeyer pousado sobre a Baía de Guanabara.
+      </p>
+      <a href="#clipe" class="botao">Ver o clipe ▶</a>
+    </div>
+    <div class="hero-arte">
+      <!-- Desenho do MAC em SVG -->
+      <svg viewBox="0 0 400 300" class="mac-svg" aria-label="Desenho do MAC Niterói">
+        <circle cx="300" cy="70" r="40" class="sol"/>
+        <path d="M0 230 Q100 210 200 230 T400 230 V300 H0Z" class="mar"/>
+        <ellipse cx="200" cy="228" rx="150" ry="14" class="espelho"/>
+        <rect x="182" y="160" width="36" height="68" class="base"/>
+        <path d="M70 120 Q200 100 330 120 L280 175 Q200 185 120 175 Z" class="cupula"/>
+        <path d="M70 120 Q200 100 330 120" class="faixa"/>
+        <path d="M96 128 L304 128" class="janela"/>
+        <path d="M330 226 C300 200 270 200 240 185 C230 180 224 172 218 168" class="rampa"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CLIPE -->
+  <section class="secao" id="clipe">
+    <h2 class="titulo"><span>01</span> O Clipe</h2>
+    <p class="texto-centro">
+      Clipe da música <strong>“É”</strong> gravado pelo Grupo 3, com marcas culturais da época.
+    </p>
+    <div class="video-box" id="videoBox">
+      <!-- O script.js coloca o vídeo aqui -->
+    </div>
+  </section>
+
+  <!-- MUSEU -->
+  <section class="secao alt" id="museu">
+    <h2 class="titulo"><span>02</span> O Museu</h2>
+    <div class="duas-colunas">
+      <figure class="foto">
+        <img src="img/museu.jpg" alt="Foto original do Museu de Arte Contemporânea de Niterói" id="fotoMuseu">
+        <figcaption>Museu de Arte Contemporânea de Niterói (MAC)</figcaption>
+      </figure>
+      <div class="info">
+        <p>
+          O <strong>MAC Niterói</strong> é um dos cartões-postais mais famosos do Brasil. Projetado por
+          <strong>Oscar Niemeyer</strong>, o prédio tem uma forma circular que lembra uma flor ou um
+          <strong>disco voador</strong> saindo da rocha do Mirante da Boa Viagem.
+        </p>
+        <p>
+          Niemeyer dizia que o museu nasce da pedra “como uma flor”. A cúpula fica apoiada em uma
+          única base cilíndrica central e é cercada por um <strong>espelho d’água</strong>, que
+          reflete o prédio e dá a sensação de que ele está flutuando.
+        </p>
+        <p>
+          A <strong>rampa vermelha</strong> sinuosa leva os visitantes até a entrada, e as janelas
+          contínuas da cúpula mostram uma vista de 360° da Baía de Guanabara, do Pão de Açúcar e
+          do Rio de Janeiro.
+        </p>
+        <p>
+          O acervo principal é a <strong>Coleção João Sattamini</strong>, uma das maiores coleções
+          de arte contemporânea brasileira.
+        </p>
+      </div>
+    </div>
+
+    <!-- Curiosidades (abre e fecha com JS) -->
+    <div class="curiosidades">
+      <h3>Curiosidades</h3>
+      <details>
+        <summary>Por que “disco voador”?</summary>
+        <p>A cúpula redonda e larga sobre uma base fina dá a impressão de uma nave pousando no mirante.</p>
+      </details>
+      <details>
+        <summary>Para que serve o espelho d’água?</summary>
+        <p>Ele reflete o prédio, ajuda na sensação de leveza e faz parte da composição pensada por Niemeyer.</p>
+      </details>
+      <details>
+        <summary>Quem fez o cálculo da estrutura?</summary>
+        <p>O engenheiro <strong>Bruno Contarini</strong>, parceiro de Niemeyer em várias obras.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="secao" id="localizacao">
+    <h2 class="titulo"><span>03</span> Onde fica o prédio</h2>
+    <p class="texto-centro">
+      Mirante da Boa Viagem, s/nº — Boa Viagem, <strong>Niterói – RJ</strong>
+    </p>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps?q=Museu+de+Arte+Contempor%C3%A2nea+de+Niter%C3%B3i&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa do MAC Niterói"></iframe>
+    </div>
+  </section>
+
+  <!-- FICHA TÉCNICA -->
+  <section class="secao alt" id="ficha">
+    <h2 class="titulo"><span>04</span> Ficha técnica</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="icone">📅</span>
+        <h3>Inauguração</h3>
+        <p><strong class="contador" data-alvo="1996">0</strong></p>
+        <p>2 de setembro de 1996</p>
+      </div>
+      <div class="card">
+        <span class="icone">✏️</span>
+        <h3>Arquiteto</h3>
+        <p><strong>Oscar Niemeyer</strong></p>
+        <p>(1907 – 2012)</p>
+      </div>
+      <div class="card">
+        <span class="icone">🏗️</span>
+        <h3>Engenheiro</h3>
+        <p><strong>Bruno Contarini</strong></p>
+        <p>cálculo estrutural</p>
+      </div>
+      <div class="card">
+        <span class="icone">📏</span>
+        <h3>Altura</h3>
+        <p><strong class="contador" data-alvo="16">0</strong> metros</p>
+        <p>cúpula com cerca de 50 m de diâmetro</p>
+      </div>
+      <div class="card">
+        <span class="icone">💧</span>
+        <h3>Espelho d’água</h3>
+        <p><strong class="contador" data-alvo="817">0</strong> m²</p>
+        <p>ao redor da base</p>
+      </div>
+      <div class="card">
+        <span class="icone">🖼️</span>
+        <h3>Acervo</h3>
+        <p><strong>Coleção João Sattamini</strong></p>
+        <p>arte contemporânea brasileira</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÚSICA -->
+  <section class="secao" id="musica">
+    <h2 class="titulo"><span>05</span> A música</h2>
+    <div class="musica-box">
+      <div class="disco" aria-hidden="true"></div>
+      <div>
+        <h3>“É” — Gonzaguinha</h3>
+        <p>
+          Canção de <strong>Gonzaguinha</strong> (Luiz Gonzaga Júnior), lançada em 1988. A letra
+          fala do desejo do povo brasileiro por dignidade, respeito e uma vida melhor — uma
+          música de protesto e esperança, que dialoga com o espírito crítico do movimento
+          tropicalista e da MPB das décadas de 60 e 70.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRUPO -->
+  <section class="secao alt" id="grupo">
+    <h2 class="titulo"><span>06</span> Grupo 3</h2>
+    <ul class="integrantes">
+      <li>Integrante 1</li>
+      <li>Integrante 2</li>
+      <li>Integrante 3</li>
+      <li>Integrante 4</li>
+      <li>Integrante 5</li>
+      <li>Integrante 6</li>
+    </ul>
+  </section>
+
+  <footer class="rodape">
+    <p>Trabalho escolar · Tropicalismo · Grupo 3 · 2026</p>
+    <button id="topoBtn" class="topo-btn" aria-label="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
