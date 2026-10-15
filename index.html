@@ -4,57 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAC Niterói - Grupo 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <nav>
+        <span class="logo">Grupo 3</span>
+        <div class="links">
+            <a href="#clipe">Clipe</a>
+            <a href="#museu">Museu</a>
+            <a href="#info">Informações</a>
+            <a href="#local">Onde fica</a>
+        </div>
+    </nav>
+
     <header>
         <h1>Museu de Arte Contemporânea de Niterói</h1>
-        <p>Trabalho de Tropicalismo - Grupo 3</p>
-        <p>Música: "É" - Gonzaguinha</p>
+        <p>Trabalho de Tropicalismo - Música "É" (Gonzaguinha)</p>
     </header>
 
     <main>
 
-        <section>
+        <section id="clipe">
             <h2>Clipe</h2>
-            <div id="clipe"></div>
+            <div id="video"></div>
         </section>
 
-        <section>
+        <section id="museu">
             <h2>O Museu</h2>
-            <img src="img/museu.jpg" alt="Foto do MAC Niterói" id="foto">
-            <p>
-                O MAC Niterói foi projetado pelo arquiteto Oscar Niemeyer. Ele tem formato
-                redondo e muita gente fala que parece um disco voador. Em volta dele tem um
-                espelho d'água e da janela dá pra ver a Baía de Guanabara e o Pão de Açúcar.
-            </p>
+            <div class="museu">
+                <img src="img/museu.jpg" alt="Foto do MAC Niterói" id="foto">
+                <div>
+                    <p>
+                        O MAC Niterói foi projetado pelo arquiteto <b>Oscar Niemeyer</b>. Ele tem
+                        formato redondo e muita gente fala que parece um <b>disco voador</b>
+                        pousado em cima da pedra do Mirante da Boa Viagem.
+                    </p>
+                    <p>
+                        Em volta do prédio tem um <b>espelho d'água</b> que reflete o museu, e
+                        para entrar tem uma <b>rampa vermelha</b> bem famosa. Lá de dentro dá
+                        pra ver a Baía de Guanabara, o Pão de Açúcar e o Rio de Janeiro.
+                    </p>
+                    <button id="botaoCuriosidade">Ver curiosidade</button>
+                    <p id="curiosidade"></p>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section id="info">
+            <h2>Informações</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Inauguração</h3>
+                    <p>2 de setembro de 1996</p>
+                </div>
+                <div class="card">
+                    <h3>Arquiteto</h3>
+                    <p>Oscar Niemeyer</p>
+                </div>
+                <div class="card">
+                    <h3>Engenheiro</h3>
+                    <p>Bruno Contarini</p>
+                </div>
+                <div class="card">
+                    <h3>Altura</h3>
+                    <p>16 metros</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="local">
             <h2>Onde fica</h2>
             <p>Mirante da Boa Viagem, s/n - Boa Viagem, Niterói - RJ</p>
+            <iframe class="mapa" src="https://www.google.com/maps?q=MAC+Niteroi&output=embed" loading="lazy"></iframe>
         </section>
 
         <section>
-            <h2>Informações</h2>
-            <ul>
-                <li><b>Inauguração:</b> 2 de setembro de 1996</li>
-                <li><b>Arquiteto:</b> Oscar Niemeyer</li>
-                <li><b>Engenheiro:</b> Bruno Contarini</li>
-                <li><b>Altura:</b> 16 metros</li>
+            <h2>Integrantes</h2>
+            <ul class="integrantes">
+                <li>Integrante 1</li>
+                <li>Integrante 2</li>
+                <li>Integrante 3</li>
+                <li>Integrante 4</li>
+                <li>Integrante 5</li>
+                <li>Integrante 6</li>
             </ul>
-        </section>
-
-        <section>
-            <h2>Grupo 3</h2>
-            <p>Integrante 1, Integrante 2, Integrante 3, Integrante 4, Integrante 5, Integrante 6</p>
         </section>
 
     </main>
 
     <footer>
-        <p>Grupo 3 - 2026</p>
+        <p>Grupo 3 - Tropicalismo - 2026</p>
     </footer>
 
     <script src="script.js"></script>
