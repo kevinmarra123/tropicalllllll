@@ -121,25 +121,6 @@ figcaption {
     margin-top: 4px;
 }
 
-button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: inherit;
-}
-
-button:hover {
-    background-color: #e05500;
-}
-
-#curiosidade {
-    margin-top: 10px;
-    font-style: italic;
-}
-
 /* cards */
 .cards {
     display: grid;
