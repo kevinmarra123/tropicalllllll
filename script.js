@@ -1,11 +1,7 @@
-// coloca aqui o link do clipe no youtube quando ficar pronto
-// exemplo: var linkClipe = "https://www.youtube.com/embed/CODIGO_DO_VIDEO";
-var linkClipe = "";
+// caminho do clipe que fica na pasta video
+var linkClipe = "video/clipe.mp4";
 
 var video = document.getElementById("video");
 
-if (linkClipe == "") {
-    video.innerHTML = '<div class="aviso">O clipe vai ser colocado aqui em breve!</div>';
-} else {
-    video.innerHTML = '<iframe src="' + linkClipe + '" allowfullscreen></iframe>';
-}
+// coloca o video dentro da div com controles de play, pause e volume
+video.innerHTML = '<video src="' + linkClipe + '" controls></video>';

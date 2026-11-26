@@ -83,18 +83,10 @@ p {
 }
 
 /* video */
-#video iframe,
 #video video {
     width: 100%;
-    height: 450px;
-    border: none;
-    border-radius: 10px;
-}
-
-.aviso {
-    background-color: #eee;
-    padding: 60px 20px;
-    text-align: center;
+    max-height: 500px;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -200,10 +192,5 @@ footer {
 
     .cards {
         grid-template-columns: 1fr 1fr;
-    }
-
-    #video iframe,
-    #video video {
-        height: 220px;
     }
 }
