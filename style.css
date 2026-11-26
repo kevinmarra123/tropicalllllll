@@ -83,10 +83,13 @@ p {
 }
 
 /* video */
+#video {
+    text-align: center;
+}
+
 #video video {
-    width: 100%;
-    max-height: 500px;
-    background-color: black;
+    height: 500px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
